@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { HeadPost } from "./HeadPost";
+import { Text, Box } from "@chakra-ui/react";
+// import { HeadPost } from "./HeadPost";
 
 type Props = {
   post: any;
@@ -12,13 +13,30 @@ export const Post = ({ post }: Props) => {
   } = post;
 
   return (
-    <article>
-      <HeadPost meta={meta} />
+    <Box mb={10}>
       <Link href={"/blog" + link}>
-        <a>Read more →</a>
+        <Text
+          cursor="pointer"
+          fontSize="1.5rem"
+          fontWeight="900"
+          color="#f39c12"
+          mb={2}
+        >
+          {meta.title}
+        </Text>
       </Link>
-    </article>
+
+      <Box color="#fff" className="details">
+        <Text textColor="#cfc6c6" mb={4}>
+          {meta.description}
+        </Text>
+        <span>{meta.date}&nbsp; &nbsp; &nbsp;</span>
+        <span role="img" aria-label="one coffee">
+          ☕ {meta.readTime + " min read"}
+        </span>
+      </Box>
+    </Box>
   );
 };
 
-export default Post
+export default Post;

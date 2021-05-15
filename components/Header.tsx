@@ -1,35 +1,17 @@
 import Link from "next/link";
-
+import { Flex, Text, Heading } from "@chakra-ui/react";
 export default function Header() {
   return (
-    <nav>
-      <h1>Oliver's Blog</h1>
-      <div>
+    <Flex justify="space-between" mt={14} mb={20}>
+      <Text fontSize="24px" fontWeight="bold">
         <Link href="/">
-          <a>Blog</a>
+          <a>
+            <Heading color="white" type="2xl">
+              Oliver's Blog
+            </Heading>
+          </a>
         </Link>
-        <Link href="/">
-          <a>About</a>
-        </Link>
-      </div>
-      <style jsx>{`
-        nav {
-          background: #444;
-          width: auto;
-          padding: 0 2rem;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          font-size: 1rem;
-        }
-        nav a {
-          margin-right: 1rem;
-          text-decoration: none;
-        }
-        nav a:hover {
-          text-decoration: underline;
-        }
-      `}</style>
-    </nav>
+      </Text>
+    </Flex>
   );
 }

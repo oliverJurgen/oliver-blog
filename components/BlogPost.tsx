@@ -1,17 +1,14 @@
 import React from "react";
-import { HeadPost } from "./HeadPost";
-import { Meta } from "globalTypes";
+import { Box } from "@chakra-ui/react";
 
 type Props = {
   children: React.ReactNode;
-  meta: Meta;
 };
 
-export default function BlogPost({ children, meta }: Props) {
+export default function BlogPost({ children }: Props) {
   return (
     <>
-      <HeadPost meta={meta} isBlogPost />
-      <article>{children}</article>
+      <Box color="white">{children}</Box>
     </>
   );
 }

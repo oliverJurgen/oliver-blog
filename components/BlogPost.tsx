@@ -1,5 +1,6 @@
 import React from "react";
 import { Box } from "@chakra-ui/react";
+import "github-markdown-css";
 
 type Props = {
   children: React.ReactNode;
@@ -8,7 +9,9 @@ type Props = {
 export default function BlogPost({ children }: Props) {
   return (
     <>
-      <Box color="white">{children}</Box>
+      <Box className="markdown-body" color="white">
+        {children}
+      </Box>
     </>
   );
 }

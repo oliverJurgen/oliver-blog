@@ -1,21 +1,105 @@
 import BlogPost from "../../../components/BlogPost";
 
 export const meta = {
-  title: "Introduction to Next JS",
-  description: "Getting started with the Next framework",
-  date: "Aug 04, 2020",
+  title: "Testing out MDX",
+  description: "Getting started with Creating simple blog using MDX syntax",
+  date: "May 16, 2021",
   readTime: 2,
 };
 
 export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 
-## My Headline
+#### Testing out Github Markdown
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus pellentesque dolor non egestas. In sed tristique elit. Cras vehicula, nisl vel ultricies gravida, augue nibh laoreet arcu, et tincidunt augue dui non elit. Vestibulum semper posuere magna, quis molestie mauris faucibus ut. Praesent ornare velit sit amet enim semper lacinia. Aenean nec sem lacus. Cras porta nunc nec leo lacinia sagittis. Aliquam ornare gravida cursus. Etiam ultrices massa quis erat scelerisque rhoncus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin lacinia sodales augue, non mattis ipsum pretium non. Morbi vehicula tempor blandit. Nam rhoncus, massa a maximus imperdiet, tortor risus aliquet tortor, nec lacinia eros nisi volutpat massa. Maecenas ut augue ipsum.
+[Heres the link](https://sindresorhus.com/github-markdown-css/)
 
-Sed vehicula libero pulvinar
-tincidunt ligula non, luctus massa. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas arcu purus, aliquam ac molestie ac, luctus eget sem. Sed pellentesque massa eros, condimentum commodo ligula cursus ut. Mauris sit amet molestie ipsum. Nullam venenatis est at purus mollis consectetur. Phasellus a ipsum a quam ullamcorper aliquet. Nunc gravida bibendum placerat.
+# H1
 
-## My Headline
+## H2
 
-Fusce lacinia mauris vel massa tincidunt dignissim. Proin tempus nunc sed efficitur porta. Nunc ornare tellus scelerisque velit euismod, ut mollis diam tristique. Phasellus vel diam egestas augue ullamcorper gravida. Sed id mattis ligula, id suscipit nisl. Ut placerat in est vel rutrum. Integer tempor condimentum lectus, pretium cursus dolor venenatis sit amet. Ut venenatis lectus massa, eu tincidunt ipsum congue et. Curabitur mollis lacinia magna eu hendrerit. Mauris finibus leo ut orci vehicula feugiat. Etiam at ultrices velit. Aliquam faucibus congue lorem, at bibendum felis dapibus a. Pellentesque ornare dignissim magna, vitae molestie massa.
+### H3
+
+#### H4
+
+##### H5
+
+###### H6
+
+Alternatively, for H1 and H2, an underline-ish style:
+
+# Alt-H1
+
+## Alt-H2
+
+Emphasis, aka italics, with _asterisks_ or _underscores_.
+
+Strong emphasis, aka bold, with **asterisks** or **underscores**.
+
+Combined emphasis with **asterisks and _underscores_**.
+
+## Strikethrough uses two tildes. ~~Scratch this.~~
+
+1. First ordered list item
+2. Another item
+   ⋅⋅\* Unordered sub-list.
+3. Actual numbers don't matter, just that it's a number
+   ⋅⋅1. Ordered sub-list
+4. And another item.
+
+⋅⋅⋅You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we'll use three here to also align the raw Markdown).
+
+⋅⋅⋅To have a line break without a paragraph, you will need to use two trailing spaces.⋅⋅
+⋅⋅⋅Note that this line is separate, but within the same paragraph.⋅⋅
+⋅⋅⋅(This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)
+
+- Unordered list can use asterisks
+
+* Or minuses
+
+- Or pluses
+
+---
+
+[I'm an inline-style link](https://www.google.com)
+
+[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
+
+[I'm a reference-style link][arbitrary case-insensitive reference text]
+
+[I'm a relative reference to a repository file](../blob/master/LICENSE)
+
+[You can use numbers for reference-style link definitions][1]
+
+Or leave it empty and use the [link text itself]
+
+Some text to show that the reference links can follow later.
+
+[arbitrary case-insensitive reference text]: https://www.mozilla.org
+[1]: http://slashdot.org
+[link text itself]: http://www.reddit.com
+
+---
+
+Here's our logo (hover to see the title text):
+
+Inline-style:
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+
+Reference-style:
+![alt text][logo]
+
+## [logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2
+
+<a
+  href="http://www.youtube.com/watch?feature=player_embedded&v=YOUTUBE_VIDEO_ID_HERE
+"
+  target="_blank"
+>
+  <img
+    src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg"
+    alt="IMAGE ALT TEXT HERE"
+    width="240"
+    height="180"
+    border="10"
+  />
+</a>

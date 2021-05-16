@@ -2,7 +2,11 @@ import Link from "next/link";
 import { Flex, Text, Heading } from "@chakra-ui/react";
 export default function Header() {
   return (
-    <Flex justify="space-between" mt={14} mb={20}>
+    <Flex 
+    
+    // bg="orange"
+    
+    justify="space-between" mt={14} mb={20}>
       <Text fontSize="24px" fontWeight="bold">
         <Link href="/">
           <a>

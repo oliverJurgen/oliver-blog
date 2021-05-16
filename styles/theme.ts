@@ -4,15 +4,15 @@ const theme = extendTheme({
   styles: {
     global: {
       body: {
-        background: "#333",
+        backgroundColor: "#000",
         padding: 0,
         margin: 0,
       },
     },
   },
   fonts: {
-    heading: "Montserrat",
-    body: "Merriweather",
+    heading: "Merriweather",
+    body: "-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji",
   },
 });
 

@@ -31,9 +31,9 @@ export const Post = ({ post }: Props) => {
           {meta.description}
         </Text>
         <span>{meta.date}&nbsp; &nbsp; &nbsp;</span>
-        <span role="img" aria-label="one coffee">
+        {/* <span role="img" aria-label="one coffee">
           ☕ {meta.readTime + " min read"}
-        </span>
+        </span> */}
       </Box>
     </Box>
   );

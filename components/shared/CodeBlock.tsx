@@ -1,8 +1,15 @@
 import Highlight, { defaultProps } from "prism-react-renderer";
+import myTheme from "prism-react-renderer/themes/palenight";
 
-const CodeBlock = ({ children }) => {
+const CodeBlock = ({ children, className }) => {
+  const language = className.replace(/language-/, "");
   return (
-    <Highlight {...defaultProps} code={children} language="javascript">
+    <Highlight
+      {...defaultProps}
+      code={children}
+      language={language}
+      theme={myTheme}
+    >
       {({ className, style, tokens, getLineProps, getTokenProps }) => (
         <pre className={className} style={{ ...style, padding: "20px" }}>
           {tokens.map((line, i) => (

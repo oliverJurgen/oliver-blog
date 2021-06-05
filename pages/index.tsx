@@ -1,9 +1,8 @@
 import { Post } from "../components/Post";
 // import { posts } from "utils/getAllPosts";
-import { posts } from "../getAllPosts";
+import { posts } from "utils/getAllPosts";
 
 export default function IndexPage() {
-  console.log("HELLO");
   return (
     <>
       {posts.map((post: any) => (

@@ -7,5 +7,5 @@ function importAll(r: any) {
 }
 
 export const posts = importAll(
-  require?.context("./pages/blog/", true, /\.mdx$/)
+  require?.context("pages/blog/", true, /\.mdx$/)
 );

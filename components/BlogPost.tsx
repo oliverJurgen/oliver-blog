@@ -9,7 +9,7 @@ type Props = {
 export default function BlogPost({ children }: Props) {
   return (
     <>
-      <Box className="markdown-body" color="white">
+      <Box mb={10} className="markdown-body" color="white">
         {children}
       </Box>
     </>

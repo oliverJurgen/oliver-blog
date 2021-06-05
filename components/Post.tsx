@@ -18,8 +18,8 @@ export const Post = ({ post }: Props) => {
         <Text
           cursor="pointer"
           fontSize="1.5rem"
-          fontWeight="900"
-          color="#d23669"
+          fontWeight="500"
+          color="#f108a4"
           mb={2}
         >
           {meta.title}

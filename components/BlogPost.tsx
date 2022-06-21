@@ -26,10 +26,16 @@ export default function BlogPost({ children }: Props) {
           }
           .markdown-body p {
             color: #fff;
-            line-height: 40px;
+            line-height: 34px;
+          }
+          .markdown-body a {
+            color: #fd1d1d;
           }
           .prism-code {
             font-size: 16px;
+            letter-spacing: 0.5px;
+            word-spacing: 1px;
+            line-height: 26px;
           }
         `}
       >

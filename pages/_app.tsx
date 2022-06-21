@@ -7,7 +7,6 @@ import { MDXProvider } from "@mdx-js/react";
 import "styles/globals.css";
 import theme from "styles/theme";
 
-// import "@fontsource/montserrat";
 import "@fontsource/merriweather";
 import "@fontsource/public-sans";
 

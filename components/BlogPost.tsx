@@ -33,8 +33,7 @@ export default function BlogPost({ children }: Props) {
           }
           .prism-code {
             font-size: 16px;
-            letter-spacing: 0.5px;
-            word-spacing: 1px;
+            letter-spacing: -0.2px;
             line-height: 26px;
           }
         `}

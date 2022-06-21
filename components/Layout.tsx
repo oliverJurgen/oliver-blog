@@ -19,9 +19,9 @@ export default function Layout({ children, pageTitle, description }: Props) {
         <title>{pageTitle}</title>
       </Head>
 
-      <Box maxW="650px" mx="auto" px="1rem">
+      <Box maxW="720px" mx="auto" px="1rem">
         <Header />
-        <Box>{children}</Box>
+        <Box minH="100vh">{children}</Box>
       </Box>
     </>
   );

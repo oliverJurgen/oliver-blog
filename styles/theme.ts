@@ -11,8 +11,10 @@ const theme = extendTheme({
     },
   },
   fonts: {
-    heading: "Merriweather",
-    body: "-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji",
+    // heading: "Merriweather",
+    // body: "-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji",
+    heading: `'Merriweather', sans-serif`,
+    body: `'Public Sans', sans-serif`,
   },
 });
 

@@ -14,13 +14,11 @@ export default function Header() {
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
             `}
-            fontSize="30px"
+            fontSize="40px"
           >
             Writing
           </Text>
-          <Text color="gray.400">
-            Anything under the sun  :)
-          </Text>
+          <Text color="gray.400">Anything under the sun :)</Text>
         </a>
       </Link>
     </Flex>
